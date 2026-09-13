@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#f4f1e8" />
+    <meta
+      name="description"
+      content="Heglau entdecken: ein fränkisches Dorf am Heglauer Mühlbach. Eine illustrierte Reise durch Geschichte, Töpferhandwerk und die Merkendorfer Krauttradition."
+    />
+    <title>Heglau — Kleines Dorf. Große Geschichten.</title>
+    <link rel="canonical" href="https://glaubi.net/heglau/" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="./assets/fonts/cormorant-regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/heglau-flight-poster.webp"
+      as="image"
+      fetchpriority="high"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script type="module" src="./src/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#dorf">Zum Inhalt</a>
+    <header class="site-header">
+      <a class="brand" href="#dorf" aria-label="Heglau – zum Anfang">
+        <svg class="brand-sprig" viewBox="0 0 28 38" aria-hidden="true">
+          <path
+            d="M13 35c2-10-3-20 6-31M13 26C3 25 3 17 3 17c9-1 11 7 10 9Zm1-10C6 13 8 7 8 7c7 2 8 6 6 9Zm0 14c9 0 12-8 12-8-9-1-12 5-12 8Z"
+          />
+        </svg>
+        <span>heglau<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Hauptnavigation">
+        <a href="#dorf" class="is-current" aria-current="location">Das Dorf</a>
+        <a href="#geschichte">Geschichte</a>
+        <a href="#handwerk">Handwerk</a>
+        <a href="#kraut">Kraut & Kultur</a>
+      </nav>
+      <a href="#besuch" class="header-visit"
+        >Vorbeikommen <span aria-hidden="true">↗</span></a
+      >
+      <button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+        aria-label="Menü öffnen"
+      >
+        <span></span><span></span>
+      </button>
+      <nav
+        id="mobile-nav"
+        class="mobile-nav"
+        aria-label="Mobile Navigation"
+        hidden
+      >
+        <a href="#dorf">Das Dorf</a><a href="#geschichte">Geschichte</a
+        ><a href="#handwerk">Handwerk</a><a href="#kraut">Kraut & Kultur</a
+        ><a href="#besuch">Vorbeikommen ↗</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="journey" id="reise">
+        <div class="world-stage" aria-hidden="true">
+          <div class="world-viewport">
+            <div class="world-camera">
+              <img
+                class="world-image"
+                src="./assets/heglau-flight-poster.webp"
+                width="1280"
+                height="720"
+                alt=""
+                fetchpriority="high"
+              /><video
+                data-src="./assets/heglau-flight.mp4"
+                data-src-mobile="./assets/heglau-flight-mobile.mp4"
+                class="world-video"
+                muted
+                playsinline
+                preload="none"
+                tabindex="-1"
+              ></video>
+            </div>
+            <span class="world-caption"
+              ><span class="tiny-spark">✳</span> Ein kleiner Ort. Eine eigene
+              Welt.</span
+            >
+            <span class="world-coordinate"
+              >49° 10′ 56″ N <br />10° 42′ 18″ O</span
+            >
+            <div class="compass">
+              <span>N</span
+              ><svg viewBox="0 0 40 40">
+                <path d="m20 5 5 15-5 15-5-15Z" />
+                <path d="M5 20h30M20 1v4M20 35v4" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="chapter-track">
+          <section
+            class="chapter chapter-hero"
+            id="dorf"
+            data-chapter="0"
+            aria-labelledby="dorf-title"
+          >
+            <div class="chapter-copy">
+              <p class="eyebrow"><span></span> EIN STÜCK MITTELFRANKEN</p>
+              <h1 id="dorf-title">
+                Kleines Dorf. <br />Große <br /><em>Geschichten.</em>
+              </h1>
+              <p class="intro">
+                Willkommen in Heglau. Wo der Mühlbach fließt, Handwerk lebendig
+                ist und das Kraut ein Stück Heimat ist.
+              </p>
+              <a class="button button-primary" href="#geschichte"
+                >Das Dorf entdecken <span aria-hidden="true">↓</span></a
+              >
+              <p class="hero-note">
+                <span class="note-line"></span> Bei Merkendorf. Mitten im
+                Grünen.
+              </p>
+            </div>
+            <div class="hero-foot">
+              <p>
+                <span class="scroll-icon" aria-hidden="true"></span> SCROLLEN &
+                ENTDECKEN
+              </p>
+              <span>Eine illustrierte Reise durch Heglau</span
+              ><span class="hero-number">01 <i>/</i> 05</span>
+            </div>
+          </section>
+
+          <section
+            class="chapter"
+            id="geschichte"
+            data-chapter="1"
+            aria-labelledby="geschichte-title"
+          >
+            <div class="chapter-copy">
+              <p class="eyebrow"><span></span> 02 — WURZELN & WANDEL</p>
+              <h2 id="geschichte-title">
+                Seit 1187. <br />Und voller <br /><em>Leben.</em>
+              </h2>
+              <p>
+                Als „Heglin“ beginnt die überlieferte Geschichte in einer
+                Urkunde des Klosters Heilsbronn. Ein kleines Dorf, das viel
+                erlebt hat und immer wieder neu anfing.
+              </p>
+              <div class="history-mini">
+                <span class="history-year">1187</span>
+                <div>
+                  Zum ersten Mal erwähnt. <br /><span
+                    >Seit 1971 Teil von Merkendorf.</span
+                  >
+                </div>
+              </div>
+              <button class="text-link" data-open-history>
+                Durch die Geschichte <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </section>
+
+          <section
+            class="chapter"
+            id="handwerk"
+            data-chapter="2"
+            aria-labelledby="handwerk-title"
+          >
+            <div class="chapter-copy">
+              <p class="eyebrow"><span></span> 03 — MIT HÄNDEN & HERZ</p>
+              <h2 id="handwerk-title">
+                Aus Erde. <br />Mit Liebe. <br /><em>Fürs Leben.</em>
+              </h2>
+              <p>
+                In der Töpferstube Tanja Keim wird Ton zu besonderen
+                Alltagsbegleitern. Steinzeug, von Hand auf der Töpferscheibe
+                gedreht — jedes Stück mit eigener Handschrift.
+              </p>
+              <div class="chapter-detail">
+                <span class="detail-icon" aria-hidden="true">◷</span>
+                <div>Freitag, 14–16 Uhr<span>und nach Vereinbarung</span></div>
+              </div>
+              <a
+                class="text-link"
+                href="https://toepferstube-tanjakeim.de/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Die Töpferstube kennenlernen
+                <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </section>
+
+          <section
+            class="chapter"
+            id="kraut"
+            data-chapter="3"
+            aria-labelledby="kraut-title"
+          >
+            <div class="chapter-copy">
+              <p class="eyebrow"><span></span> 04 — HIER WÄCHST TRADITION</p>
+              <h2 id="kraut-title">
+                Ein Dorf <br />mit <em>Kraut</em> <br />
+                und Seele.
+              </h2>
+              <p>
+                Weißkraut, Blaukraut, Wirsing und Spitzkraut: Auf rund zwei
+                Hektar wächst beim Familienbetrieb Merkendorfer Kraut, was die
+                Region seit Generationen verbindet.
+              </p>
+              <div class="chapter-detail">
+                <span class="detail-icon" aria-hidden="true">✳</span>
+                <div>
+                  Eine Tradition, die zusammenbringt.<span
+                    >Das Heglauer Krautfest seit 2001.</span
+                  >
+                </div>
+              </div>
+              <a
+                class="text-link"
+                href="https://merkendorfer-kraut.de/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Mehr über das Merkendorfer Kraut
+                <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </section>
+
+          <section
+            class="chapter"
+            id="besuch"
+            data-chapter="4"
+            aria-labelledby="besuch-title"
+          >
+            <div class="chapter-copy">
+              <p class="eyebrow"><span></span> 05 — EINFACH MAL ANKOMMEN</p>
+              <h2 id="besuch-title">
+                Ein kleiner <br />Abstecher. <br /><em>Viel Heimat.</em>
+              </h2>
+              <p>
+                Zwei Kilometer südlich von Merkendorf, am Heglauer Mühlbach,
+                liegt Heglau. Für einen Besuch in der Töpferstube, frisches
+                Kraut vom Hof oder einen neuen Blick aufs Land.
+              </p>
+              <a class="button button-primary" href="#besuchsinfo"
+                >Deinen Besuch planen <span aria-hidden="true">↓</span></a
+              >
+              <p class="hero-note">
+                <span class="note-line"></span> 91732 Heglau · Landkreis Ansbach
+              </p>
+            </div>
+          </section>
+        </div>
+        <nav class="journey-rail" aria-label="Kapitel der Dorfreise">
+          <a href="#dorf" aria-label="Kapitel 1: Das Dorf" aria-current="step"
+            ><span>01</span><i></i
+          ></a>
+          <a href="#geschichte" aria-label="Kapitel 2: Geschichte"
+            ><span>02</span><i></i
+          ></a>
+          <a href="#handwerk" aria-label="Kapitel 3: Handwerk"
+            ><span>03</span><i></i
+          ></a>
+          <a href="#kraut" aria-label="Kapitel 4: Kraut und Kultur"
+            ><span>04</span><i></i
+          ></a>
+          <a href="#besuch" aria-label="Kapitel 5: Besuch"
+            ><span>05</span><i></i
+          ></a>
+        </nav>
+      </div>
+
+      <section class="facts" aria-label="Heglau in Zahlen">
+        <p class="eyebrow">KLEINER ORT, <br />FESTE WURZELN.</p>
+        <div><strong>111</strong><span>Einwohner · Stand 2020</span></div>
+        <div>
+          <strong>418<span> m</span></strong
+          ><span>über dem Meer · NHN</span>
+        </div>
+        <div>
+          <strong>1187</strong><span>erstmals als „Heglin“ erwähnt</span>
+        </div>
+        <div>
+          <strong>2,275<span> km²</span></strong
+          ><span>Gemarkungsfläche</span>
+        </div>
+      </section>
+
+      <section
+        class="local-life section-wrap"
+        id="aus-dem-ort"
+        aria-labelledby="local-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> VON HIER. FÜR DICH.</p>
+            <h2 id="local-title">Das Gute liegt <em>so nah.</em></h2>
+          </div>
+          <p>Zwei Familienbetriebe. <br />Und ganz viel Heglau.</p>
+        </div>
+        <div class="business-grid">
+          <article class="business-card">
+            <a
+              class="business-art"
+              href="https://toepferstube-tanjakeim.de/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Website der Töpferstube Tanja Keim öffnen"
+              ><img
+                src="./assets/pottery.webp"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                alt="Illustrative Miniatur einer fränkischen Töpferwerkstatt mit Steinzeug und Töpferscheibe"
+              /><span class="art-label">HANDWERK</span
+              ><span class="art-arrow" aria-hidden="true">↗</span></a
+            >
+            <div class="business-info">
+              <h3>Töpferstube Tanja Keim</h3>
+              <p>
+                Handgedrehtes Steinzeug. Für den Alltag gemacht, mit Liebe zum
+                Detail.
+              </p>
+              <a
+                href="https://toepferstube-tanjakeim.de/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-link"
+                >Zur Töpferstube <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </article>
+          <article class="business-card">
+            <a
+              class="business-art"
+              href="https://merkendorfer-kraut.de/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Website von Merkendorfer Kraut öffnen"
+              ><img
+                src="./assets/kraut.webp"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                alt="Illustrative Miniatur eines Krautfelds mit grünen und violetten Krautköpfen"
+              /><span class="art-label">LANDWIRTSCHAFT</span
+              ><span class="art-arrow" aria-hidden="true">↗</span></a
+            >
+            <div class="business-info">
+              <h3>Merkendorfer Kraut</h3>
+              <p>
+                Vom eigenen Feld in den Hofladen. Frisches Sauerkraut, jede
+                Woche neu.
+              </p>
+              <a
+                href="https://merkendorfer-kraut.de/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-link"
+                >Zum Familienbetrieb <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="visit-section section-wrap"
+        id="besuchsinfo"
+        aria-labelledby="visit-title"
+      >
+        <div class="visit-copy">
+          <p class="eyebrow"><span></span> WIR SIND GLEICH NEBENAN</p>
+          <h2 id="visit-title">Auf nach <br /><em>Heglau.</em></h2>
+          <p>
+            Im mittelfränkischen Landkreis Ansbach, am Heglauer Mühlbach — einem
+            Zufluss der Altmühl.
+          </p>
+          <a
+            class="button button-primary"
+            href="https://www.openstreetmap.org/?mlat=49.18222&mlon=10.70500#map=15/49.18222/10.70500"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Auf der Karte öffnen <span aria-hidden="true">↗</span></a
+          ><span class="map-note">Öffnet OpenStreetMap in einem neuen Tab</span>
+        </div>
+        <div class="visit-details">
+          <div
+            class="location-sketch"
+            role="img"
+            aria-label="Schematische Lage: Heglau liegt südlich von Merkendorf, zwischen Hirschlach und Mitteleschenbach. Nicht maßstabsgetreu."
+          >
+            <svg viewBox="0 0 600 300" aria-hidden="true">
+              <path
+                class="map-field"
+                d="m10 20 162-25 57 81-143 72ZM445 57l130-20 26 126-158-2ZM331 212l113-16 57 103-149-9Z"
+              />
+              <path
+                class="map-road"
+                d="M60 207c150-80 200-22 240-51S420 60 560 49M300 156 284 10"
+              />
+              <path
+                class="map-water"
+                d="M43 48c20 67 97 29 106 100s61 22 89 45 65 66 153 50 125 31 190 37"
+              />
+              <circle class="map-town" cx="284" cy="45" r="5" />
+              <circle class="map-town" cx="81" cy="194" r="4" />
+              <circle class="map-town" cx="512" cy="58" r="4" />
+              <circle class="map-halo" cx="300" cy="156" r="20" />
+              <circle class="map-center" cx="300" cy="156" r="7" />
+              <text x="298" y="39">Merkendorf</text>
+              <text x="298" y="70" class="map-small">2 km nördlich</text>
+              <text x="32" y="224">Hirschlach</text>
+              <text x="580" y="112" text-anchor="end">Mitteleschenbach</text>
+              <text x="320" y="159" class="map-name">Heglau</text>
+              <text x="95" y="271" class="map-water-label">
+                Heglauer Mühlbach
+              </text>
+              <text x="566" y="239" class="map-small">N ↑</text></svg
+            ><span>Schematische Lage · nicht maßstabsgetreu</span>
+          </div>
+          <div class="hours-grid">
+            <div>
+              <span class="eyebrow">TÖPFERSTUBE</span>
+              <h3>Freitag: 14–16 Uhr</h3>
+              <p>und nach Vereinbarung</p>
+              <a
+                href="https://toepferstube-tanjakeim.de/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Aktuelle Informationen ↗</a
+              >
+            </div>
+            <div>
+              <span class="eyebrow">HOFLADEN · HEGLAU 8</span>
+              <h3>Mo–Fr: 8–17 Uhr</h3>
+              <p>Samstag: 8–12 Uhr</p>
+              <a
+                href="https://merkendorfer-kraut.de/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Aktuelle Informationen ↗</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing">
+        <span class="closing-star" aria-hidden="true">✳</span>
+        <p>
+          Manchmal braucht es nicht viel. <br /><em
+            >Nur ein kleines Stück Heimat.</em
+          >
+        </p>
+        <a href="#dorf" class="text-link"
+          >Noch einmal durchs Dorf <span aria-hidden="true">↑</span></a
+        >
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a href="#dorf" class="brand">heglau<span class="brand-dot">.</span></a>
+        <p>Ein fränkisches Dorf. <br />Ein besonderer Ort.</p>
+        <span>91732 Heglau <br />Merkendorf · Mittelfranken</span>
+      </div>
+      <div class="footer-bottom">
+        <span
+          >Inoffizielles Dorfporträt · KI-generierte Miniaturen, keine
+          Ortsabbildungen.</span
+        ><button class="text-link" data-open-sources>
+          Quellen & Hinweise <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+    </footer>
+    <button
+      class="motion-toggle"
+      aria-pressed="false"
+      title="Scrollbewegung ausschalten"
+    >
+      <svg viewBox="0 0 20 20" aria-hidden="true">
+        <path d="M7 4v12M13 4v12" /></svg
+      ><span class="motion-copy">
+        <span class="motion-label">Animation pausieren</span>
+        <small class="motion-reason">Reduzierte Bewegung im System</small>
+      </span>
+    </button>
+
+    <dialog id="history-dialog" aria-labelledby="history-dialog-title">
+      <div class="dialog-top">
+        <p class="eyebrow">HEGLAU IM LAUF DER ZEIT</p>
+        <button class="dialog-close" aria-label="Geschichte schließen">
+          ×
+        </button>
+      </div>
+      <h2 id="history-dialog-title">
+        Kleine Chronik. <br /><em>Lange Geschichte.</em>
+      </h2>
+      <ol class="timeline">
+        <li>
+          <time>1187</time>
+          <div>
+            <h3>Ein Name taucht auf</h3>
+            <p>
+              Als „Heglin“ erscheint der Ort in einer Urkunde des Klosters
+              Heilsbronn.
+            </p>
+          </div>
+        </li>
+        <li>
+          <time>1618–1648</time>
+          <div>
+            <h3>Zerstörung und Neubeginn</h3>
+            <p>
+              Im Dreißigjährigen Krieg wird Heglau zerstört und danach wieder
+              aufgebaut.
+            </p>
+          </div>
+        </li>
+        <li>
+          <time>1806</time>
+          <div>
+            <h3>Ein Teil Bayerns</h3>
+            <p>Heglau kommt zum Königreich Bayern.</p>
+          </div>
+        </li>
+        <li>
+          <time>1818</time>
+          <div>
+            <h3>Eine eigene Gemeinde</h3>
+            <p>
+              Mit der bayerischen Gemeindebildung entsteht die selbstständige
+              Ruralgemeinde Heglau.
+            </p>
+          </div>
+        </li>
+        <li>
+          <time>1971</time>
+          <div>
+            <h3>Zusammen mit Merkendorf</h3>
+            <p>Seit dem 1. Januar gehört Heglau zur Stadt Merkendorf.</p>
+          </div>
+        </li>
+        <li>
+          <time>1998–2011</time>
+          <div>
+            <h3>Das Kraut schlägt Wurzeln</h3>
+            <p>
+              Krautverwertung seit 1998, Krautfest seit 2001 und ein eigener
+              Krautbrunnen seit 2011.
+            </p>
+          </div>
+        </li>
+      </ol>
+      <p class="dialog-footnote">
+        Nach dem
+        <a
+          href="https://de.wikipedia.org/wiki/Heglau"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Wikipedia-Artikel „Heglau“</a
+        >.
+      </p>
+    </dialog>
+    <dialog id="sources-dialog" aria-labelledby="sources-title">
+      <div class="dialog-top">
+        <p class="eyebrow">TRANSPARENT & VON HIER</p>
+        <button class="dialog-close" aria-label="Quellen schließen">×</button>
+      </div>
+      <h2 id="sources-title">Quellen & <br /><em>Hinweise.</em></h2>
+      <div class="sources-content">
+        <h3>Ein illustriertes Dorfporträt</h3>
+        <p>
+          Diese Seite ist ein inoffizieller Gestaltungsvorschlag für Heglau,
+          keine amtliche Ortsseite. Die KI-generierten Miniaturen interpretieren
+          fränkisches Dorfleben. Sie bilden weder den tatsächlichen Ortsplan
+          noch die Werkstatt oder Felder der genannten Betriebe ab.
+        </p>
+        <h3>Inhalte & Aktualität</h3>
+        <p>
+          Ortsdaten und Geschichte basieren auf dem
+          <a
+            href="https://de.wikipedia.org/wiki/Heglau"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Wikipedia-Artikel „Heglau“</a
+          >. Die Texte wurden gekürzt und neu formuliert.
+          Einwohnerzahl: 111, Stand 2020. Quellenabruf: 13. September 2026.
+        </p>
+        <p>
+          Öffnungszeiten und Betriebsinformationen wurden mit
+          <a
+            href="https://toepferstube-tanjakeim.de/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Töpferstube Tanja Keim</a
+          >
+          und
+          <a
+            href="https://merkendorfer-kraut.de/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Merkendorfer Kraut</a
+          >
+          abgeglichen. Bitte vor einem Besuch die aktuellen Angaben der Betriebe
+          prüfen. Ein aktueller Krautfest-Termin wird hier nicht zugesichert.
+        </p>
+        <h3>Lizenz & Gestaltung</h3>
+        <p>
+          Die aus Wikipedia abgeleiteten Orts- und Geschichtstexte stehen unter
+          <a
+            href="https://creativecommons.org/licenses/by-sa/4.0/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >CC BY-SA 4.0</a
+          >; die Versionsgeschichte des verlinkten Artikels nennt die
+          Mitwirkenden. Gestaltung und Umsetzung folgen unserem eigenen
+          Arbeitsablauf für illustrierte Dorfreisen. Hinweise zu verwendeten
+          Softwarebestandteilen stehen in den
+          <a href="./THIRD-PARTY-NOTICES.txt">Drittlizenzen</a>.
+        </p>
+        <h3>Datenschutz</h3>
+        <p>
+          Diese Website verwendet keine Cookies, Analysewerkzeuge oder
+          eingebetteten Drittanbieter-Inhalte. Schriftarten und Bilder werden
+          zusammen mit der Website ausgeliefert. Das Hosting erfolgt über GitHub
+          Pages und Cloudflare; dabei werden technisch notwendige
+          Verbindungsdaten an die Hostinganbieter übermittelt. Verlinkte externe
+          Websites werden erst beim Öffnen eines Links aufgerufen.
+        </p>
+      </div>
+    </dialog>
+    <noscript
+      ><style>
+        .motion-toggle {
+          display: none;
+        }
+      </style>
+      <p class="noscript-note">
+        Die Dorfreise lässt sich auch ohne JavaScript lesen. Quellen: Wikipedia,
+        Töpferstube Tanja Keim und Merkendorfer Kraut. Die Miniaturen sind
+        KI-generierte Illustrationen.
+      </p></noscript
+    >
+  </body>
+</html>

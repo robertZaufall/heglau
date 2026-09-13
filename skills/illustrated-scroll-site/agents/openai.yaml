@@ -1,0 +1,4 @@
+interface:
+  display_name: "Illustrated Scroll Site"
+  short_description: "Source-based sites with generated scroll-driven media"
+  default_prompt: "Use $illustrated-scroll-site to create a village website from verified sources with generated artwork and a scroll-controlled camera journey."
